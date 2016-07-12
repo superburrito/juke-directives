@@ -32,12 +32,12 @@ juke.directive('doubleClick', function(){
 	return {
 		restrict: 'A',
 		scope: {
-			uponDoubleClick: '&doubleClick'
+			doubleClick: '&'
 		},
 		link: function(scope, element, attrs){
 			element.on('dblclick', function(){
 				console.log(scope);
-				scope.uponDoubleClick();
+				scope.doubleClick();
 			});
 		}
 	}

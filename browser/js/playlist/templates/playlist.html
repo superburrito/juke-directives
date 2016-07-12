@@ -1,8 +1,6 @@
 <div>
-  <h3>{{ playlist.name }}</h3>
-
+  <h3>{{ playlist.name }}</h3>  
   <song-list songs="playlist.songs"></song-list>
-
   <small ng-hide="playlist.songs.length">No songs.</small>
   <hr>
   <div ng-controller="SongChooseCtrl" class="well">
